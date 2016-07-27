@@ -1,0 +1,81 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans);
+
+body 
+{
+	font-family: 'Open Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	text-align: center;
+}
+
+.header
+{
+	text-align: center;
+	border-radius: 10px;
+}
+
+.footer
+{
+	background-color:#99FF99!important;
+}
+
+
+.social
+{
+	display:inline;
+	float:right;
+}
+
+.payment
+{
+	display:inline;
+	float:left;
+}
+
+.social a i 
+{
+	transition: all 0.2s ease-in-out;
+	color: #115051;
+}
+.payment a i:hover 
+{
+	opacity: .5;
+}
+
+.payment a i 
+{
+	transition: all 0.2s ease-in-out;
+	color: #115051;
+}
+.social a i:hover 
+{
+	opacity: .7;
+}
+
+ul li
+{
+	display: inline;
+	list-style: none;
+}
+
+.cards
+{
+	border:1px solid #ccc;
+}
+
+.small_card,.hover-shadow:hover
+{
+	box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important
+}
+.normal_card
+{
+	box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important
+}
+.card
+{
+	box-shadow:0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)!important
+}
+
+.cl
+{
+	clear: both;
+}

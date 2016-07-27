@@ -1,0 +1,39 @@
+body 
+{
+    background-color: lightgrey;
+	text-align: left;
+	width: 60%;
+	margin: auto;
+}
+
+.main_header
+{
+	text-align: center;
+}
+
+p.dotted 
+{
+	text-align:center;
+	vertical-align:middle;
+	border-style: dotted;
+}
+
+p.dashed
+{
+	text-align:center;
+	vertical-align:middle;
+	border-style: dashed;
+}
+
+p.groove
+{
+	text-align:center;
+	vertical-align:middle;
+	border-style: groove;
+}
+
+p.ridge
+{	text-align:center;
+	vertical-align:middle;
+	border-style: ridge;
+}

@@ -1,0 +1,149 @@
+body 
+{
+    background-color: lightgrey;
+	text-align: center;
+	width: 100%;
+	margin: auto;
+}
+
+nav ul li
+{
+	display: inline;	
+}
+
+nav ul
+{
+	background-color: #639A11;
+}
+
+nav ul a
+{
+	font-size: 20px;
+	color: black;
+	text-decoration: none;
+}
+
+nav ul a:hover
+{
+    -ms-transform: translate(50px, 100px);
+   	-webkit-transform: translate(50px, 100px);
+    transform: translate(50px, 100px);
+	color: white;
+}
+
+.header
+{
+	background-color: #73AD21;
+	text-align: center;
+	margin-top: 10px;
+	padding-top: 10px;
+	border-radius: 10px;
+}
+
+.hero
+{
+	width: 100%;
+	height: auto;
+}
+
+.footer
+{
+	background-color:#73AD21;
+    border-radius: 10px;
+    padding: 10px;
+	margin-top: 15px;
+	margin-bottom: 5px;
+}
+
+
+.social
+{
+	display:inline;
+	float:right;
+}
+
+.payment
+{
+	display:inline;
+	float:left;
+}
+
+.social ul li a i 
+{
+	transition: all 0.2s ease-in-out;
+	color: black;
+}
+.payment ul li a i:hover 
+{
+	opacity: .5;
+}
+
+.payment ul li a i 
+{
+	transition: all 0.2s ease-in-out;
+	color: black;
+}
+.social ul li a i:hover 
+{
+	opacity: .7;
+}
+
+ul li
+{
+	display: inline;
+	list-style: none;
+}
+
+.social_head
+{
+	text-align: right;
+}
+
+.payment_head
+{
+	text-align: left;
+}
+
+.cards
+{
+	border:1px solid #ccc;
+}
+.verysmall_card
+{
+	box-shadow:0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important
+	}
+.small_card,.hover-shadow:hover
+{
+	box-shadow:0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important
+}
+.normal_card
+{
+	box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)!important
+}
+.card
+{
+	box-shadow:0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19)!important
+}
+.big_card
+{
+	box-shadow:0 16px 24px 0 rgba(0,0,0,0.22),0 25px 55px 0 rgba(0,0,0,0.21)!important
+}
+.verybig_card
+{
+	box-shadow:0 24px 24px 0 rgba(0,0,0,0.2),0 40px 77px 0 rgba(0,0,0,0.22)!important
+}
+
+.cl
+{
+	clear: both;
+}
+
+h1 
+{
+	font: 400 40px/0.5 'Courgette', Helvetica, sans-serif;
+}
+
+p 
+{
+	font: 400 14px/1.5 'Average', Times, serif;
+}

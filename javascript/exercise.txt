@@ -1,0 +1,211 @@
+
+Flatten the following object:
+var myObj = [5, [22], [[14]], [[4]],[5,6]]
+
+Question 4
+
+var myObj =
+
+[{'name':'Saurabh', 'age': 30, 'occupation': "Team Leader"},
+
+{'name':'Anupriya', 'age': 32, 'occupation': "Team Leader"},
+
+{'name':'Kalyani', 'age': 25, 'occupation': "Programmer"},
+
+{'name':'Damodaran', 'age': 27, 'occupation': "Programmer"},
+
+{'name':'Krishnakath', 'age': 22, 'occupation': "Programmer"},
+
+{'name':'Venketraman', 'age': 28, 'occupation': "Programmer"}];
+
+
+
+Exercise 1: Display all objects with occupation as 'Programmer'
+
+
+Exercise 2: Sort the object basis the age key in the descending order
+
+
+Exercise 3: Recreate the above array of objects into the following object of objects :
+
+
+{ 'Team Leader' : [{'name':_____________, 'age':__________},{}],
+
+'<anotheroccupation>': [{'name':______________, 'age':________},{}]}
+
+
+
+*********************************************************************************
+
+
+
+
+
+​
+//this is node global objects used for interacting with the file system
+//One need such objects from platforms to work with OS file system
+​
+var fs = require('fs'),
+    readline = require('readline'),
+​
+var inputCSVFilePath = "<YOUR CSV FILE goes here...>",
+    outputFilePath1 = "<OUTPUT_JSON_FILE1>",
+    outputFilePath = "<OUTPUT_JSON_FILE2>";
+​
+//When reading large files - we cannot use standard methods for file read and write. We read a chunk of data - manipulate and write it back immediately. 
+​
+var csvFileRead = fs.createReadStream(inputCSVFilePath),
+      lineByline = readline.createInterface({
+        input : reader
+    });
+​
+var MAP_COUNTRIES_ASIA = ["Afghanistan", "Bahrain", "Bangladesh", "Bhutan", "Myanmar", "Cambodia", "China", "India", "Indonesia", "Iraq", "Israel", "Japan", "Jordan", "Kazakhstan", "Lebanon", "Malaysia", "Maldives", "Mongolia", "Nepal",
+"Oman", "Pakistan", "Philippines", "Qatar", "Saudi Arabia", "Singapore", "Sri Lanka", "Syrian Arab Republic", "Tajikistan", "Thailand", "Timor-Leste", "Turkmenistan", "United Arab Emirates", "Uzbekistan", "Vietnam", "Yemen"];
+​
+var regexp =  <SET APPROPRIATE REGULAR EXPRESSION FOR READING AND SPLITTING RECORDS>
+​
+csvFileRead.on('open', function(){
+    ....
+    <INITIALZE YOUR OBJECTS / ARRAYS>
+    ....
+ });
+​
+​
+lineByline.on('line',function(line){
+    var rows = line.split('/r/n');
+    .....
+    
+    <FETCH HEADERS FROM THE FIRST LINE>
+    .....
+    <USE REGEXP INCASE RECORDS HAVE EXTRA QUOTES OR COMMAS>
+    .....
+    .....
+    <FILTER AND CREATE NEW OBJECTS FOR REQUIRED RECORDS / AGGREGATE ETC.>
+    .....
+    .....
+    ..... 
+});
+​
+lineByline.on('close',function () {
+    <HANDLE LARGE FILE>
+);
+​
+csvFileRead.on('end', function(){
+    <WRITE JSON FILES>
+});
+
+
+**************************************************************************
+
+
+
+const myObj =[{'name':'Saurabh', 'age': 30, 'occupation': "Team Leader"},{'name':'Anupriya', 'age': 32, 'occupation': "Team Leader"},{'name':'Kalyani', 'age': 25, 'occupation': "Programmer"},{'name':'Damodaran', 'age': 27, 'occupation': "Programmer"},{'name':'Krishnakath', 'age': 22, 'occupation': "Programmer"},{'name':'Venketraman', 'age': 28, 'occupation': "Programmer"}];
+​
+const mainObj = {};
+const uniqueOccupation = [];
+​
+// extract unique occupation and store it an array
+for (let i = 0; i < myObj.length; i++) {
+	if (uniqueOccupation.indexOf(myObj[i].occupation) === -1) {
+		uniqueOccupation.push(myObj[i].occupation);
+	}
+}
+​
+uniqueOccupation.forEach(function(occupation) {
+	const occupationDetails = [];
+	for (let i = 0; i < myObj.length; i++) {
+		if (occupation === myObj[i].occupation) {
+			const employeeDetails = {};
+			employeeDetails.name = myObj[i].name;
+			employeeDetails.age = myObj[i].age;
+			occupationDetails.push(employeeDetails);
+		}
+	}
+	mainObj[occupation] = occupationDetails;
+});
+​
+console.log(JSON.stringify(mainObj));
+
+
+
+*****************************************************************************8
+
+
+
+
+var byTypeArray = [];
+function getObjectbyOccupation(obj, occupationtype) {
+   byTypeArray = [];
+   for (var i = 0; i < obj.length; i++) {
+       if (obj[i].occupation == occupationtype) {
+           byTypeArray.push(obj[i]);
+       }
+   }
+   return byTypeArray;
+}
+var programmer = getObjectbyOccupation(obj, "Programmer");
+var teamLead = getObjectbyOccupation(obj, "Team Leader");
+
+var big = {};
+
+big["Programmer"] = programmer;
+big["Team Leader"] = teamLead;
+
+var stringJson= JSON.stringify(big);
+
+console.log(stringJson);
+
+
+
+*******************************************************************************
+
+
+function Employee(name, age, weight) {
+    this.Name = name;
+    this.age = age;
+    this.weight = weight;
+}
+
+var employeeObject = new Employee('Jay',25,58);
+
+JSON.stringify(employeeObject);
+
+{
+    "Name": "Jay",
+    "age": 25,
+    "weight": 58
+}
+
+var employeeObject1 = new Employee('Jay', 25, 58);
+
+var employeeObject2 = new Employee('Raj', 27, 64);
+
+var employeeObject3 = new Employee('Roy', 21, 55);
+
+arrayList.push(employeeObject1);
+arrayList.push(employeeObject2);
+arrayList.push(employeeObject3);
+
+console.log(JSON.stringify(arrayList));
+
+
+[{
+    "Name": "Jay",
+    "age": 25,
+    "weight": 58
+}, {
+    "Name": "Raj",
+    "age": 27,
+    "weight": 64
+}, {
+    "Name": "Roy",
+    "age": 21,
+    "weight": 55
+}]
+
+
+// JSON to JS object
+var jsonData = JSON.stringify(arrayList);
+
+var javascriptObject = JSON.parse(jsonData);
+

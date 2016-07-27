@@ -1,0 +1,28 @@
+{
+  "name": "emailapi",
+  "version": "1.0.0",
+  "description": "This is an app to access the gmail inbox using gmail API.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anurag",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "*",
+    "gulp-concat": "^2.6.0",
+    "gulp-html-replace": "^1.6.0",
+    "gulp-react": "^3.1.0",
+    "gulp-uglify": "^1.5.3",
+    "object-assign": "*",
+    "reactify": "*",
+    "vinyl-source-stream": "*"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-generator": "^4.13.4",
+	"react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "react-router": "^2.6.0"
+  }
+}
