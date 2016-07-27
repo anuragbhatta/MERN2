@@ -1,0 +1,82 @@
+body{
+    margin-top: 30px;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.search-form{
+    width: 100%;
+    margin: auto;
+    background: black;
+    padding: 20px 20px 20px 20px;
+    border: 1px #ccc solid;
+
+    border-color: black;
+
+}
+
+img{
+    height : 50%;
+    width: 80%;
+}
+
+.thumbnail {
+  height : 50%;
+  width: 80%;
+}
+.row{
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+#searchInput{
+  width: 700px;
+}
+#searchButton{
+  width: 700px;
+  height: 30px;
+}
+.MailBox{
+  background-color:white;
+}
+
+.MailBoxView{
+  background-color:white;
+}
+h3,h4{
+  color: #1ABC9C;
+  text-align: center;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.form-control{
+
+  background-color:#747474;
+  border-color:#747474;
+}
+
+body{
+  background-color:white;
+  color: #1ABC9C;
+}
+
+nav li {
+  display: inline;
+}
+
+div ul li{
+  display: inline;
+  padding-right: 20px;
+}
+
+.MailDiv{
+  border: 1px #ccc solid;
+
+}
+
+.modal-dialog{
+  position: static;
+  width: 650px;
+  overflow-x: auto;
+  overflow-y: auto;
+}
